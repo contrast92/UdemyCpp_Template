@@ -6,7 +6,7 @@ Willkommen bei der nächsten Programmier-Übung in diesem Kurs.
 
 ## Aufgaben der Programmierübung
 
-Die Aufgabe ist es die Funktion 
+Die Aufgabe ist es die Funktion
 
 ```cpp
 void mod_cross_sum(int I, int J);
