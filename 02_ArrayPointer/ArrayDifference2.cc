@@ -45,7 +45,7 @@ int main()
     int a[5] = {4, 5, 6, 7, 8};
     std::cout << array_maximum(a, 5) << std::endl;
 
-    char name[]{"Jan Schaffranek"};
+    char name[]{"Malte Martini"};
     print_name(name);
 
     return 0;
