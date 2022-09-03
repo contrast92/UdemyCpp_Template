@@ -5,7 +5,7 @@
 
 void print_game_state(unsigned int player_pos)
 {
-    for (unsigned int i = START; i < LEN_X; i++)
+    for (unsigned int i = START; i < LEN_X; ++i)
     {
         if (i == player_pos)
         {
