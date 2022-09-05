@@ -17,36 +17,36 @@ DynamicArray create_dynamic_array(const double &value, const std::size_t &length
     return dynamic_array;
 }
 
-void push_back(DynamicArray &dynmaic_array, const int &value)
+void push_back(DynamicArray &dynamic_array, const int &value)
 {
     double *temp = nullptr;
-    temp = new double[dynmaic_array.m_length + 1];
+    temp = new double[dynamic_array.m_length + 1];
 
-    for (std::size_t i = 0; i < dynmaic_array.m_length; i++)
+    for (std::size_t i = 0; i < dynamic_array.m_length; i++)
     {
-        temp[i] = dynmaic_array.m_data[i];
+        temp[i] = dynamic_array.m_data[i];
     }
 
-    temp[dynmaic_array.m_length] = value;
+    temp[dynamic_array.m_length] = value;
 
-    delete[] dynmaic_array.m_data;
+    delete[] dynamic_array.m_data;
 
-    dynmaic_array.m_data = temp;
-    dynmaic_array.m_length++;
+    dynamic_array.m_data = temp;
+    dynamic_array.m_length++;
 }
 
-void pop_back(DynamicArray &dynmaic_array)
+void pop_back(DynamicArray &dynamic_array)
 {
     double *temp = nullptr;
-    temp = new double[dynmaic_array.m_length - 1];
+    temp = new double[dynamic_array.m_length - 1];
 
-    for (std::size_t i = 0; i < dynmaic_array.m_length - 1; i++)
+    for (std::size_t i = 0; i < dynamic_array.m_length - 1; i++)
     {
-        temp[i] = dynmaic_array.m_data[i];
+        temp[i] = dynamic_array.m_data[i];
     }
 
-    delete[] dynmaic_array.m_data;
+    delete[] dynamic_array.m_data;
 
-    dynmaic_array.m_data = temp;
-    dynmaic_array.m_length--;
+    dynamic_array.m_data = temp;
+    dynamic_array.m_length--;
 }
